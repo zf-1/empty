@@ -1,0 +1,63 @@
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Marmelad', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+ */
+*{
+	font-family: sans-serif;
+	outline: none;
+}
+body{
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+a{
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+}
+ul{
+	list-style: none;
+}
+.popWrap{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.7);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	z-index: -2;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.popWrap.active{
+	visibility: visible;
+	opacity: 1;
+	z-index: 100;
+}
+.popCont{
+	width: 360px;
+	height: 412px;
+	max-width: 100%;
+	position: relative;
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	background: #f9f9f9;
+	border-radius: 9px 9px 0 0;
+	display: none;
+}
+.popCont.active{
+	display: block;
+}
